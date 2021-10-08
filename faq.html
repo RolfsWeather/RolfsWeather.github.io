@@ -18,8 +18,10 @@
           <li><a href="#mozTocId38597">Q. What are the different types of frost?</a></li>
           <li><a href="#mozTocId238626">Q. What do those "monotonic" tables
               mean?</a></li>
-          <li><a href="#mozTocId885081">Q.&nbsp; What is Cumulative Snow Depth
-              and why is it measured in cm·days?</a></li>
+          <li><a href="#mozTocId619237">Q. What is Cumulative Snow Depth and why
+              is it measured in cm·days?</a></li>
+          <li><a href="#mozTocId352276">Q. How are hours of bright sunshine
+              calculated?</a></li>
         </ul>
       </li>
     </ul>
@@ -215,12 +217,11 @@
         </tr>
       </tbody>
     </table>
-    <h2><br>
-    </h2>
-    <h2><a id="mozTocId885081" class="mozTocH2"></a><a>Q.&nbsp; What is
-        Cumulative Snow Depth and why is it measured in cm·days?</a></h2>
+    <p><br>
+    </p>
+    <h2><a id="mozTocId619237" class="mozTocH2"></a><a>Q. What is Cumulative
+        Snow Depth and why is it measured in cm·days?</a></h2>
     <p><a><span class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0">
-          <meta http-equiv="content-type" content="text/html; charset=utf-8">
           <span class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0"></span></span></a></p>
     <table style="width: 100%;" border="0">
       <tbody>
@@ -257,5 +258,36 @@
     <p><a><span class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0"><span
             class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0"></span></span></a></p>
     <br>
+    <h2><a id="mozTocId352276" class="mozTocH2"></a>Q. How are hours of bright
+      sunshine calculated?</h2>
+    <div>
+      <div class="_a5_x7qimk18YbGSwE8Fy">
+        <div style="color: rgb(26, 26, 27);" class="_292iotee39Lmt0MkQZ2hPV RichTextJSON-root">
+          <p class="_1qeIAgB0cPwnLhDF9XSiJM">I use the hourly "current
+            conditions" to estimate bright sunshine.</p>
+          <p class="_1qeIAgB0cPwnLhDF9XSiJM">If the "current conditions" are one
+            of:</p>
+          <pre class="_3GnarIQX9tD_qsgXkfSDz1"><code class="_34q3PgLsx9zIU5BiSOjFoM">    'a few clouds',
+    'clear',
+    'haze',
+    'mainly clear',
+    'mainly sunny',
+    'mostly sunny',
+    'partly cloudy',
+    'sunny',
+</code></pre>
+          <p class="_1qeIAgB0cPwnLhDF9XSiJM">Then I declare it "bright
+            sunshine". Otherwise it is not.</p>
+          <p class="_1qeIAgB0cPwnLhDF9XSiJM">This is not the same as how
+            Environment Canada used to calculate hours of bright sunshine.&nbsp;
+            They used to use a Campbell–Stokes recorder, which is much better
+            than my method.&nbsp; Environment Canada discontinued that method of
+            measurement many years ago, so I estimate it.&nbsp; My estimations
+            are not equivalent.&nbsp; They produce numbers consistently lower
+            than a Campbell–Stokes recorder, but they are self-consistent and
+            that's really all that matters with this type of comparison.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
