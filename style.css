@@ -196,6 +196,23 @@ table.accounts th {
   background: var(--tint);
 }
 
+.places {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 4px 24px;
+  margin: 12px 0;
+}
+
+.places h3 {
+  margin: 10px 0 2px;
+  font-size: 16px;
+}
+
+.places p {
+  margin: 0;
+  font-size: 16px;
+}
+
 .faq-index {
   padding-left: 20px;
 }
